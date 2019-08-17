@@ -62,7 +62,10 @@ attributes: {
     titlecolor: { type: 'string', default: '#ffffff' },
     TitleFontSize: { type: 'number', default: 42 }, 
     subtitlecolor: { type: 'string', default: '#ffffff' },
-    SubtitleFontSize: { type: 'number', default: 32 }, 
+    SubtitleFontSize: { type: 'number', default: 32 },
+
+    contentcolor: { type: 'string', default: '#ffffff' },
+    contentfontsize: { type: 'number', default: 20 }, 
     
 },
 
@@ -82,7 +85,9 @@ edit: props => {
         titlecolor, 
         TitleFontSize, 
         subtitlecolor, 
-        SubtitleFontSize 
+        SubtitleFontSize,
+        contentcolor,
+        contentfontsize
     } = props.attributes;
 
     if (!props.attributes.id) {
@@ -259,10 +264,10 @@ edit: props => {
     }
     // Content
     const ContentStyle = {  
-        color: titlecolor,
-        fontSize: TitleFontSize+'px',
+        color: contentcolor,
+        fontSize: contentfontsize+'px',
         fontWeight: 700,
-        lineHeight: 40+'px',
+        lineHeight: contentfontsize+'px',
     }
     // Button 
     const buttonStyle = {  
@@ -434,6 +439,7 @@ edit: props => {
     return (
         <Fragment >
             <InspectorControls key="inspector"> 
+
                 <PanelBody title={__('General Settings')} initialOpen={false}>
                     <SliderAlignControl />
                     <PanelRow>
@@ -449,6 +455,7 @@ edit: props => {
                         <DotFormToggle />
                     </PanelRow> 
                 </PanelBody>
+
                 {/* Title */}
                 <PanelBody title={__('Title Setting')} initialOpen={false}>
                     <PanelRow>
@@ -457,11 +464,11 @@ edit: props => {
                         </label>
                     </PanelRow> 
                     <TitletitleColor />
-                    <TitleFontSizeControl />
-                    
+                    <TitleFontSizeControl />    
                 </PanelBody>
+
                 {/* Subtitle */}
-                <PanelBody title={__('Subtitle Setting')} initialOpen={true}>
+                <PanelBody title={__('Subtitle Setting')} initialOpen={false}>
                     <PanelRow>
                         <label htmlFor="titlecolor" >
                             { ( 'SubTitle FontColor' ) }
@@ -471,15 +478,17 @@ edit: props => {
                     <SubitleFontSizeControl />
                 </PanelBody>
 
-                <PanelBody title={__('Content Setting')} initialOpen={false}>
+                {/* Content */}
+                <PanelBody title={__('Content Setting')} initialOpen={true}>
                     <PanelRow>
                         <label htmlFor="titlecolor" >
-                            { ( 'SubTitle FontColor' ) }
+                            { ( 'Content FontColor' ) }
                         </label>
                     </PanelRow> 
                     <ContentColorControl />
                     <ContentFontSizeControl />
                 </PanelBody>
+
                 <PanelBody title={__('Button Setting')} initialOpen={false}>
                     
                 </PanelBody>
