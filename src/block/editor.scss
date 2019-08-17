@@ -1,0 +1,121 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+ .gts-minslider-block {
+	background: #fafafa;
+	border-radius: 5px;
+	border: 1px solid #cacaca;
+}
+
+.content-plain-text {
+	min-height: 58px !important;
+}
+
+.wp-block-quote {
+	margin-bottom: 0.5em;
+}
+
+button.add-more-minslider {
+	background: #1a73aa;
+    border: none;
+    font-size: 18px;
+    color: white;
+    line-height: 16px;
+    padding: 12px 30px;
+    border-radius: 4px;
+}
+button.add-more-minslider:hover {
+    background: #106396;
+}
+.editor-styles-wrapper h2:before {
+	display: none !important;
+}
+// span.remove-minslider {
+// 	right: 30px;
+// 	position: absolute;
+// }
+
+textarea.editor-plain-text.content-plain-text,
+textarea.editor-plain-text.author-plain-text,
+textarea.editor-plain-text.link-plain-text {
+	background: #fafafa;
+	border: 1px solid #dadada;
+	border-radius: 5px;
+}
+
+.gts__picture {
+	position: relative;
+
+	a {
+		cursor: pointer;
+	}
+
+	.gts__picture__actions {
+		text-align: right;
+		text-decoration: none;
+		font-size: 16px;
+		color: #121517;
+		width: 50%;
+		float: right;
+	}
+}
+
+.minslider-image {
+	display: block;
+	cursor: pointer;
+	line-height: 100px;
+	text-align: center;
+}
+
+textarea.editor-plain-text.content-plain-text, 
+textarea.editor-plain-text.author-plain-text, 
+textarea.editor-plain-text.link-plain-text,
+.block-editor .block-editor-plain-text {
+    background: transparent;
+    border: none;
+	border-radius: 0;
+	line-height: 26px;
+}
+
+.gts-minslider-block blockquote {
+    padding-left: 0;
+}
+.gts__picture a.change-image {
+    text-decoration: none;
+    font-size: 16px;
+    color: #121517;
+}
+.change-image {
+    width: 50%;
+    float: left;
+}
+
+.editor-styles-wrapper a {
+    transition: color 110ms ease-in-out;
+    text-decoration: none;
+    font-size: 16px;
+    color: #121517;
+}
+
+.components-button.is-small {
+    display: none;
+}
+.components-color-palette__custom-color {
+    margin-right: 0;
+}
+.minslider-image {
+	position: relative;
+}
+.minslider-image .col-9.mt-3 {
+    text-transform: translate(50%, 50%);
+    transform: translate(50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}

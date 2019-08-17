@@ -1,0 +1,111 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+ .gts-minslider-block {
+	blockquote {
+		border-left: none;
+		margin-bottom: 1em;
+	}
+	padding: 20px;
+	background: #f3f3f3;
+	margin-bottom: 1em;
+  	border-radius: 10px;
+	min-height: 160px;
+}
+
+.minslider-slider {
+    margin-bottom: 2em;
+}
+
+.minslider-text {
+	font-size: 1.5em;
+	line-height: 1.5;
+	font-style: normal;
+}
+
+.minslider-author-container {
+	text-align: center;
+}
+
+.minslider-author-link,
+.minslider-author-name {
+	padding-left: 12px;
+	margin-bottom: 5px;
+	font-style: normal;
+}
+
+span.minslider-author {
+	font-style: normal;
+}
+
+.fa.fa-quote-left {
+	padding-right: 12px;
+	// padding-left: 22px;
+	font-size: 1.25em;
+}
+
+.fa.fa-quote-right {
+	padding-left: 12px;
+	font-size: 1.25em;
+}
+
+// slider
+ol.carousel-indicators {
+	bottom: -25px;
+}
+
+ol.carousel-indicators li {
+	background-color: rgba(167, 167, 167, 0.5);
+}
+
+ol.carousel-indicators .active {
+	background-color: black;
+}
+
+.entry-content {
+	a.carousel-control-prev,
+	a.carousel-control-next {
+		box-shadow: none;
+		border-bottom: none;
+		&:hover, &:focus, &:active {
+			box-shadow: none;
+			border-bottom: none;
+		}
+	}
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	color: #000;
+}
+
+.gts-minslider-slider-block.minslider-slider {
+	blockquote {
+		border-left: none;
+	}
+    background: #f3f3f3;
+    padding: 10px;
+    border-radius: 10px;
+	margin-bottom: 1em;
+	min-height: 160px;
+}
+
+.gts__picture {
+	position: relative;
+
+	.minslider-image {
+		width: 100%;
+		min-height: 300px;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+		margin-bottom: 10px;
+	}
+}
+
+.w-75 {
+	padding-left: 1em;
+}
